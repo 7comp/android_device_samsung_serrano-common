@@ -99,10 +99,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/vendor/etc/thermald.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald.conf
 
-# Copy prebuilt libc
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/libshims/libc.so:system/lib/libc.so
-
 # GPS config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/gps.conf:system/etc/gps.conf
@@ -123,7 +119,11 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl
+    android.hardware.vibrator@1.0-service.serrano
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.serrano
 
 # Power
 PRODUCT_PACKAGES += \
@@ -137,10 +137,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fsck.f2fs \
     mkfs.f2fs
-
-# Shims
-PRODUCT_PACKAGES += \
-    libshim_camera
 
 # Doze
 PRODUCT_PACKAGES += \
