@@ -284,4 +284,7 @@
          disable the overlay mechanism can set it to false.
          -->
     <bool name="config_enableHardwareFlpOverlay" translatable="false">false</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
 </resources>
