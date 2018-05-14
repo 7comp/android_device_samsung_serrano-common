@@ -141,7 +141,7 @@
             32 - Camera
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
-         config to 7.  -->
+         config to 7. -->
     <integer name="config_deviceHardwareKeys">71</integer>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
@@ -302,13 +302,16 @@
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_enableSmartPixels">true</bool>
 
+    <!-- High Brightness Mode -->
+    <bool name="config_supportHighBrightness">true</bool> 
+
     <!-- Values for GPS configuration -->
     <string-array translatable="false" name="config_gpsParameters">
         <item>SUPL_HOST=supl.google.com</item>
         <item>SUPL_PORT=7275</item>
-        <item>XTRA_SERVER_1=http://xtrapath1.izatcloud.net/xtra2.bin</item>
-        <item>XTRA_SERVER_2=http://xtrapath2.izatcloud.net/xtra2.bin</item>
-        <item>XTRA_SERVER_3=http://xtrapath3.izatcloud.net/xtra2.bin</item>
+        <item>XTRA_SERVER_1=https://xtrapath1.izatcloud.net/xtra2.bin</item>
+        <item>XTRA_SERVER_2=https://xtrapath2.izatcloud.net/xtra2.bin</item>
+        <item>XTRA_SERVER_3=https://xtrapath3.izatcloud.net/xtra2.bin</item>
         <item>NTP_SERVER=time.gpsonextra.net</item>
         <item>SUPL_MODE=1</item>
         <item>SUPL_VER=0x10000</item>

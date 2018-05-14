@@ -141,6 +141,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SamsungDoze
 
+# test
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap

@@ -99,3 +99,9 @@ BOARD_HARDWARE_CLASS += $(COMMON_PATH)/lineagehw
 ifeq ($(WITH_TWRP),true)
 -include $(COMMON_PATH)/twrp.mk
 endif
+
+# Skip API checks.
+WITHOUT_CHECK_API := true
+# Don't try to build and run all tests by default. Several tests have
+# dependencies on the framework.
+ANDROID_NO_TEST_CHECK := true
